@@ -39,6 +39,7 @@ export default function App() {
       }).then(data => {
         const token = data.data;
         setPushToken(token)
+        //After this we can store this token to database of every user and then using those tokens we can send notifications to multiple devices.
       })
       .catch(err => {
         console.log(err)
